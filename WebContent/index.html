@@ -1,0 +1,40 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" language="JavaScript" src="js/index.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/jquery.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/typed.js"></script>
+<link href="css/index.css" type="text/css" rel="stylesheet" />
+<title>那些年</title>
+</head>
+<body onload="rainbow('rainbow',6,10);">
+	<audio id="music" loop="true" controls="true" autoplay="autoplay">
+		<source src="music/1.mp3" type="audio/mpeg">
+		浏览器不支持音乐！
+	</audio>
+	<input style="position:absolute;width: 100px;height: 70px;float:right;color: red;" type="button" onclick="location.href='accept.html';" value="Go on!"/>
+	<div id="typed">
+		<p id="content">
+			<span>I have a dream!</span><br />
+			<span>One day,....</span><br />
+			<span>I have a dream!</span><br />
+			<span>One day,....</span><br />
+			<span>Now,U're my destiantion!</span><br />
+		</p>
+	</div>
+	<script type="text/javascript" language="JavaScript" >
+	</script>
+	<script>
+		$(function(){
+		    $("#typed").typed({
+		      strings: [$("#content").html()],
+		      typeSpeed: 1
+		    });
+		});
+	</script>
+	<canvas id="rainbow" width="1366px" height="768px"></canvas>
+	<canvas id="magnetism" width="70%" height="70%"></canvas>
+	<script type="text/javascript" src="js/nest.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+#magnetism {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -5;
+	opacity: .5;
+}
+
+#rainbow{
+	z-index: -10;
+}
+
+.walk {
+  width: 125px;
+  height: 150px;
+  background: url(http://lsly1989.qiniudn.com/xxxasddbgfbwalk.jpg) left;
+  -webkit-animation:anima 1s steps(16) infinite ;
+}
+
+@-webkit-keyframes anima{
+    from { background-position:2000px 0;}
+    to {background-position:0px 0;}
+}
+
+.typing{
+    width:250px;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 3s steps(50, end) infinite;
+  animation: type 3s steps(50, end) infinite;
+}
+
+
+@-webkit-keyframes type{
+    from { width: 0;}
+}
+
+@keyframes type{
+    from { width: 0;}
+}
